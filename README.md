@@ -60,7 +60,7 @@ allprojects {
 Add the PenAttendify library dependency to your app's build.gradle file:
 ```gradle
 dependencies {
-    implementation 'com.github.Penguinin-hub:PenAttendify-Android-package:0.0.3'
+    implementation 'com.github.Penguinin-hub:PenAttendify-Android-package:0.0.5'
 }
 ```
 
