@@ -31,7 +31,7 @@ This integration guide will walk you through the steps to integrate the PenAtten
 
 ---
 
-## 2. Requirements
+## 2.1 Requirements
 - Android API level 24+
 - Android Studio 4.0+
 - Device with Bluetooth support.
@@ -43,42 +43,45 @@ Please note that some older devices or devices with custom firmware may have lim
 
 ---
 
+## 2.2 Pre-request dependencies
+It is essential to obtain a list of dependencies. The following dependencies need to be added to the build.gradle file:
+```gradle
+implementation 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
+implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+```
 ## 3. Installation
 ### 3.1 Gradle Integration
 You can integrate PenAttendify into your Android project using Gradle. Follow these steps:
 
-Add the JitPack repository to your project's build.gradle file:
+Include the Maven repository in your project's settings.gradle file by adding the following code:
 ```gradle
 allprojects {
     repositories {
         ...
-        maven { url 'https://jitpack.io' }
+          maven {
+
+            url "https://maven.pkg.github.com/Penguinin-hub/PenAttendify-Android-package"
+            credentials {
+                username "PenguinINHub"
+                password "your_access_token_provided_by_penguin"
+
+            }
+        }
     }
 }
 ```
 
-Add the PenAttendify library dependency to your app's build.gradle file:
+To add the PenAttendify library dependency to your app's build.gradle file, include the following code:
 ```gradle
 dependencies {
-    implementation 'com.github.Penguinin-hub:PenAttendify-Android-package:0.0.5'
+   implementation 'com.penguinin:penattendify:0.0.12'
 }
 ```
 
 Sync your project with Gradle files to resolve the dependencies.
 
-### 3.2 Manual Installation
-To manually install PenAttendify into your Android project, follow these steps:
 
-Download the PenAttendify-Android.aar file from the provided link.
-
-Place the PenAttendify-Android.aar file in the `libs` folder of your app module.
-
-Add the following line to your app's build.gradle file to include the AAR file:
-```gradle
-dependencies {
-    implementation files('libs/PenAttendify-Android.aar')
-}
-```
 
 ---
 
