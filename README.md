@@ -75,7 +75,7 @@ allprojects {
 To add the PenAttendify library dependency to your app's build.gradle file, include the following code:
 ```gradle
 dependencies {
-   implementation 'com.penguinin:penattendify:0.0.12'
+   implementation 'com.penguinin:penattendify:0.0.13'
 }
 ```
 
