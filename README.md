@@ -8,7 +8,6 @@
   - [2. Requirements](#2-requirements)
   - [3. Installation](#3-installation)
     - [3.1 Gradle Integration](#31-gradle-integration)
-    - [3.2 Manual Installation](#32-manual-installation)
   - [4. Getting Started](#4-getting-started)
   - [5. Usage](#5-usage)
     - [5.1 Initialize PenAttendify](#51-initialize-penattendify)
